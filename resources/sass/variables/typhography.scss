@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800;900&display=swap");
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-monse: 'Montserrat', sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+html {
+    font-family: $font-family-monse;
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: $font-family-monse;
+    }
+}

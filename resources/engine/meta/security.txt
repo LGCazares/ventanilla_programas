@@ -1,0 +1,17 @@
+#
+# SECURITY.TXT for ADIP - %APPNAME%
+# If you would like to report a security issue
+# you may report it to us.
+#
+# Our security address
+Contact: mailto:
+Contact: tel:
+
+# Our PGP key
+Encryption: 
+
+#Preferred languages
+Preferred-Languages: es, en
+
+# Researchers should not trust this file if field below refers to a past date ))
+Expires: 2023-01-01T00:00:00.000Z

@@ -1,0 +1,162 @@
+.tira-header-bandeja {
+    border-radius: 15px 15px 0px 0px;
+    background-color: #F7F5F8;
+
+    h1 {
+        font-family: $font-family-monse;
+        color: $greyish-brown-three;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+}
+
+.nav-tabs {
+    .nav-item {
+        font-size: 17px;
+        background-color: #E7E6EB;
+        border-radius: 15px 15px 0 0;
+        font-weight: bold;
+
+        a {
+            color: #6F6F6F;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .active {
+            color: #6F6F6F;
+        }
+
+        .f-disable {
+            color: #c7c4c4;
+        }
+    }
+}
+
+.table-general {
+    thead {
+        background: rgb(243, 218, 218) !important;
+        background: linear-gradient(180deg, rgb(243, 218, 218) 0%, rgba(191, 178, 220, 0.22) 90%) !important;
+
+        tr {
+            th {
+                text-align: center;
+                font-size: 14px;
+                vertical-align: middle;
+                color: $texto-gral;
+                font-weight: bold;
+                line-height: normal;
+                padding-right: 2.5rem;
+
+                &:first-child {
+                    border-top-left-radius: 10px;
+                }
+
+                &:last-child {
+                    border-top-right-radius: 10px;
+                }
+            }
+        }
+    }
+
+    tbody {
+
+        tr {
+            * {
+                box-shadow: none !important;
+            }
+
+            td {
+                text-align: center;
+                vertical-align: middle;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1;
+
+                a {
+                    i, img {
+                        font-size: 1.3rem;
+                        color: $st-purple-02;
+                        margin: 0 5px 0 5px;
+                    }
+
+                    &:hover {
+                        i {
+                            color: $st-purple-03;
+                        }
+                    }
+                }
+
+                &.yellow {
+                    font-weight: bold;
+                    color: $st-yellow-01;
+                }
+
+                &.red {
+                    font-weight: bold;
+                    color: $st-red-01;
+                }
+
+                &.green {
+                    font-weight: bold;
+                    color: $st-green-01;
+                }
+            }
+
+            &:nth-child(odd) {
+                background-color: white;
+            }
+
+            &:nth-child(even) {
+                background-color: $st-purple-04;
+            }
+        }
+    }
+}
+
+.btn-purple {
+    @include button-variant($fff, $st-purple-01);
+    color: $st-purple-01;
+    font-size: $fs-16;
+    border-width: 1px;
+    border-radius: .5rem;
+    font-weight: bold;
+    padding: 15px 20px 15px 20px;
+
+    &:hover {
+        color: $st-purple-01;
+    }
+
+    img {
+        max-width: 20px;
+    }
+}
+
+.btn-actions {
+    @include button-variant($fff, $st-purple-02);
+    color: $st-purple-02;
+    font-size: $fs-14;
+    border-width: 1px;
+    border-radius: .5rem;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    margin-left: 8px;
+
+    &:hover {
+        color: $st-purple-02;
+    }
+
+    img {
+        max-width: 20px;
+        padding: 3px;
+    }
+}
+
+.div_filtros {
+    padding: 3rem;
+    background-color: #F7F5F8;
+
+    label {
+        font-size: 19px !important;
+        font-weight: 600 !important;
+    }
+}

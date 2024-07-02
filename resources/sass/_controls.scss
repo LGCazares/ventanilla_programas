@@ -1,0 +1,163 @@
+// Botones
+button, .button{
+	display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.035rem;
+    line-height: normal;
+    padding: 0.6rem 1.3rem;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+	&.sombra{
+	-webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.28);
+	-moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.28);
+	box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.28);
+	}
+
+	&.verde{
+        vertical-align: middle;
+        width: 100%;
+		color:$white-two;
+		background-color: $catastro-verde;
+        img{
+            display: none;
+            @media (min-width:992px){
+                display: inline-block;
+                position: absolute;
+                right: 5%;
+                top: 27%
+            }
+        }
+	}
+    &.morado{
+        vertical-align: middle;
+        color:$white-two;
+        background-color: $white-two;
+        border: 2px solid $morado-bg-iniciar;
+        width: fit-content;
+        height: fit-content;
+    }
+    &.submit-list{
+        vertical-align: middle;
+        width: 100%;
+		color:$nuevomorado;
+		background-color: $white-two !important;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        border: 2px solid $nuevomorado;
+        &:hover{
+            font-weight: 700;
+        }
+	}
+    &.submit-modal{
+        vertical-align: middle;
+        width: 100%;
+        color:$white-two;
+        background-color: $rosita !important;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        &:hover{
+            font-weight: 700;
+        }
+    }
+
+	&.verde:disabled{
+		color:$white-two;
+		background-color: $verde04;
+	}
+
+	&.gris{
+		color:$white-two;
+		background-color: $gris02;
+	}
+	&.gris:disabled{
+		color:$white-two;
+		background-color: $gris03;
+	}
+
+	&.amarillo{
+		color:$gris01;
+		background-color: $amarillo01;
+	}
+	&.amarillo:disabled{
+		color:$gris03;
+		background-color: $amarillo02;
+	}
+
+	&.rojo{
+        width: 100%;
+        color:$white-two;
+		background-color: $st-red-01;
+        img{
+            display: none;
+            @media (min-width:992px){
+                display: inline-block;
+                position: absolute;
+                right: 1%;
+                top: 8%;
+            }
+        }
+	}
+	&.rojo:disabled{
+		color:$white-two;
+		background-color: $rojo02;
+	}
+
+	&.dorado{
+		color:$white-two;
+		background-color: $dorado01;
+	}
+	&.dorado:disabled{
+		color:$white-two;
+		background-color: $dorado04;
+	}
+}
+
+
+// Controles
+textarea{
+	resize: none;
+}
+
+.form-control-cdmx {
+  border-radius: 0.5rem;
+  border: 0.0625rem solid $light-blue-grey;
+  color: $charcoal-grey-four;
+  font-size: 0.85rem;
+  background-color: transparent;
+}
+
+.form-control-cdmx:focus {
+  color: $verde03;
+  background-color: $white-two;
+  border-color: $teal-two !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem rgba(0, 146, 136, 0.25) !important;
+}
+
+.form-label-cdmx {
+  color: $teal-two;
+  font-weight: 700;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+small{
+    a{
+        text-align: right;
+        font-family: $font-family-monse;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        color: black;
+        text-decoration: underline!important;
+        &:hover{
+            color: black;
+            text-decoration: underline!important;
+            font-weight: 600;
+        }
+    }
+}

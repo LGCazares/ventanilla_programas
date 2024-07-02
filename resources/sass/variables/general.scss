@@ -1,0 +1,77 @@
+// Line Height
+$lh-12: 12px;
+$lh-15: 15px;
+$lh-16: 1rem;
+$lh-19: 19px;
+$lh-20: 20px;
+$lh-21: 21px;
+$lh-22: 22px;
+$lh-23: 23px;
+$lh-24: 1.5rem;
+$lh-25: 25px;
+$lh-28: 28px;
+$lh-30: 30px;
+$lh-32: 2rem;
+
+// Letter spacing
+$ls-0: 0;
+$ls-01: 0.1px;
+$ls-02: 0.2px;
+$ls-03: 0.3px;
+$ls-04: 0.4px;
+
+.text-green {
+    color: #175e50 !important;
+}
+
+.evening-sea {
+    color: $evening-sea !important;
+}
+
+.trout {
+    color: $trout !important;
+}
+
+.blue {
+    color: $blue !important;
+}
+
+.black {
+    color: #000 !important;
+}
+
+.lh-12 {
+    line-height: 0.85rem;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+p.tooltip-table {
+    text-decoration: none;
+}
+
+p.tooltip-table:hover {
+    cursor: default;
+    position: relative;
+}
+
+p.tooltip-table span {
+    display: none;
+}
+
+p.tooltip-table:hover span {
+    border-radius: 7px;
+    padding: 5px 10px 5px 5px;
+    display: block;
+    z-index: 1000;
+    background: #555770;
+    left: 0px;
+    margin: 15px;
+    width: 300px;
+    position: absolute;
+    top: 15px;
+    text-decoration: none;
+    color: #FFF;
+}

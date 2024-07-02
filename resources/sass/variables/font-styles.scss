@@ -1,0 +1,166 @@
+// Font size
+$fs-7: 0.4375rem;
+$fs-8: 0.5rem;
+$fs-9_3: 0.58125rem;
+$fs-9: 0.5625rem;
+$fs-10: 0.625rem;
+$fs-10_5: 0.65625rem;
+$fs-11: 0.6875rem;
+$fs-12: 0.75rem;
+$fs-13: 0.8125rem;
+$fs-14: 0.875rem;
+$fs-15: 0.9375rem;
+$fs-16: 1rem;
+$fs-17: 1.063rem;
+$fs-18: 1.125rem;
+$fs-19: 1.188rem;
+$fs-20: 1.25rem;
+$fs-21: 1.3125rem;
+$fs-22: 1.375rem;
+$fs-23: 1.438rem;
+$fs-24: 1.5rem;
+$fs-25: 1.563rem;
+$fs-26: 1.625rem;
+$fs-27: 1.688rem;
+$fs-28: 1.75rem;
+$fs-29: 1.813rem;
+$fs-30: 1.875rem;
+$fs-31: 1.938rem;
+$fs-32: 2rem;
+$fs-33: 2.063rem;
+$fs-34: 2.125rem;
+$fs-35: 2.188rem;
+$fs-36: 2.25rem;
+$fs-37: 2.313rem;
+$fs-38: 2.375rem;
+$fs-40: 2.5rem;
+$fs-41: 2.563rem;
+$fs-42: 2.625rem;
+$fs-43: 2.688rem;
+$fs-44: 2.75rem;
+$fs-45: 2.813rem;
+$fs-46: 2.875rem;
+$fs-47: 2.938rem;
+$fs-48: 3rem;
+$fs-49: 3.063rem;
+$fs-50: 3.125rem;
+$fs-56: 3.5rem;
+
+// Font weight
+$fw-extra-light: 100 !important;
+$fw-light: 300 !important;
+$fw-regular: 400 !important;
+$fw-medium: 500 !important;
+$fw-semi-bold: 600 !important;
+$fw-bold: 700 !important;
+$fw-extra-bold: 800 !important;
+/* inline classes*/
+
+//font weight
+
+.fw-extra-light {
+    font-weight: $fw-extra-light;
+}
+.fw-light {
+    font-weight: $fw-light;
+    text-rendering: optimizeLegibility;
+}
+
+.fw-regular {
+    font-weight: $fw-regular;
+}
+
+.fw-medium {
+    font-weight: $fw-medium;
+}
+
+.fw-semi-bold {
+    font-weight: $fw-semi-bold;
+}
+
+.fw-bold {
+    font-weight: $fw-bold;
+}
+
+.fw-extra-bold {
+    font-weight: $fw-extra-bold;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+//font size
+
+.fs-9 {
+    font-size: $fs-9 !important;
+}
+
+.fs-10 {
+    font-size: $fs-10 !important;
+}
+
+.fs-11 {
+    font-size: $fs-11 !important;
+}
+
+.fs-12 {
+    font-size: $fs-12 !important;
+}
+
+.fs-13 {
+    font-size: $fs-13 !important;
+}
+.fs-15 {
+    font-size: $fs-15 !important;
+}
+
+.fs-16 {
+    font-size: 1rem !important;
+}
+
+.fs-17 {
+    font-size: $fs-17 !important;
+}
+.fs-18 {
+    font-size: $fs-18 !important;
+}
+
+.fs-20 {
+    font-size: $fs-20 !important;
+}
+
+.fs-22 {
+    font-size: $fs-22 !important;
+}
+
+.fs-25 {
+    font-size: $fs-25 !important;
+}
+// Font size
+/*$fs-9_3: 0.58125rem;
+$fs-10: 0.625rem;
+$fs-10_5: 0.65625rem;
+$fs-11: 0.6875rem;
+$fs-12: 0.75rem;
+$fs-13: 0.8125rem;
+$fs-14: 0.875rem;
+$fs-15: 0.9375rem;
+$fs-16: 1.0rem;
+$fs-18: 1.125rem;
+$fs-19: 1.1875rem;
+$fs-20: 1.25rem;
+$fs-21: 1.3125rem;
+$fs-22: 1.375rem;
+$fs-24: 1.5rem;
+$fs-25: 1.5625rem;
+$fs-32: 2.0rem;
+$fs-35: 2.1875rem;*/
+
+// Font weight
+$fw-extra-light: 100;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+$fw-extra-bold: 800;

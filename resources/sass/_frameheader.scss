@@ -1,0 +1,50 @@
+header{
+    #iframeHeader{
+        border:none;
+        overflow:hidden;
+        width:calc(100% - 85px);
+        &.btn-guest{
+            width:calc(100% - 188px)!important;
+        }
+    }
+
+    @media (min-width: 80px) {
+        nav{
+            min-height: 50px;
+            max-height: 50px;
+            #iframeHeader{
+                min-height: 50px;
+                max-height: 50px;
+            }
+        }
+    }
+
+    @media (min-width: 645px) {
+        nav{
+            min-height: 70px;
+            max-height: 70px;
+            #iframeHeader{
+                min-height: 70px;
+                max-height: 70px;
+                &.btn-guest{
+                    width:calc(100% - 319px)!important;
+                }
+
+            }
+        }
+    }
+}
+
+#NavBarLinkExt{
+    ul{
+        &.show{
+            position:absolute!important;
+        }
+    }
+}
+
+@media (min-width: 1067px) {
+    #menuMobile{
+        display:none;
+    }
+}

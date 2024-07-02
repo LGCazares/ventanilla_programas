@@ -1,0 +1,18 @@
+#
+# SECURITY.TXT for ADIP - %APPNAME%
+# If you would like to report a security issue
+# you may report it to us.
+#
+# Our security address
+Contact: mailto:jhernandezc@adip.mx
+Contact: tel:+525515932146
+Contact: https://keybase.io/underdog1987
+
+# Our PGP key
+Encryption: https://keybase.io/underdog1987/pgp_keys.asc
+
+#Preferred languages
+Preferred-Languages: es, en, ru
+
+# Researchers should not trust this file if field below refers to a past date ))
+Expires: 2023-01-01T00:00:00.000Z

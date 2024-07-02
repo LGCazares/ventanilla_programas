@@ -1,0 +1,128 @@
+/**
+* CSS Arquetipo
+*/
+
+
+body {
+    min-height: 100vh;
+    background-color: $white-two;
+    font-family: $font-family-monse;
+    ::selection {
+        background-color: $zeleccion;
+    }
+}
+
+strong {
+    font-weight: bolder;
+}
+
+.dropdown-item {
+    font-size: 12px;
+}
+.dropdown-item:hover {
+    color: $white-two;
+    background-color: $shamrock;
+}
+.dropdown-item:focus {
+    color: #fff !important;
+    background-color: $dark-green;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $pine-green !important;
+    &.text-box-logged {
+        width: 92px;
+        margin: 0 1px 0 5px;
+    }
+}
+
+.flex-fill {
+    flex: 1 1 auto !important;
+}
+
+.plecota {
+    margin-top: 0px;
+    padding-top: 10px;
+    background-color: $pine-green;
+    padding-bottom: 10px;
+    position: relative;
+    background-image: url("../images/pleca.svg");
+    background-repeat: repeat-y;
+    background-position-x: right;
+}
+
+.encabezado-cdmx {
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: $shamrock;
+    padding-bottom: 20px;
+}
+
+.error-title {
+    font-size: 20px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: $guinda01;
+    padding-bottom: 20px;
+}
+
+.instrucciones-pleca {
+    color: $white-two;
+    font-size: 14px;
+}
+
+.page-link {
+    border-width: 0px !important;
+    border: none !important;
+    color: $pine !important;
+}
+.curpage {
+    color: #00b140 !important;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 700px) {
+    .alertaActivacion {
+        position: fixed !important;
+        top: 5px;
+        right: 2%;
+        width: 97%;
+        z-index: 9999;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .alertaActivacion {
+        position: fixed !important;
+        top: 5px;
+        right: 2%;
+        width: 50%;
+        z-index: 9999;
+    }
+}
+
+.lbl-dialog {
+    font-family: $font-family-monse;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #5d5d5d;
+}
+
+.adip-loader-gif {
+    min-width: 64px;
+    max-width: 64px;
+    min-height: 64px;
+    max-height: 64px;
+}

@@ -1,0 +1,28 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// part of your SCSS file
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+// Variables
+@import "variables/colors";
+@import "variables/general";
+@import "variables/typhography";
+@import "variables/font-styles";
+
+@import 'bootstrap/scss/bootstrap';
+@import '~jquery-ui/themes/base/all.css';
+@import "../../node_modules/bootstrap-select/sass/bootstrap-select.scss";
+
+// CSS Arquetipo
+@import '_engine';
+@import "controls";
+
+@import '_alert';
+@import '_bandejas';
+@import '_header';
+@import '_sections';
+@import "_menu";
+@import "_custom-components";
+@import "_frameheader";

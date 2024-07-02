@@ -1,0 +1,717 @@
+html {
+    font-family: $font-family-monse;
+
+    .fb-error {
+        color: $rosita;
+        background-color: $rosita-fb-error;
+        border-left: $rosita 7px solid;
+        padding: 10px;
+        font-weight: 500;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .alertaActivacion {
+            position: fixed !important;
+            top: 5px;
+            right: 2%;
+            width: 97%;
+            z-index: 9999;
+        }
+    }
+
+    @media only screen and (min-width: 700px) {
+        .alertaActivacion {
+            position: fixed !important;
+            top: 5px;
+            right: 2%;
+            width: 50%;
+            z-index: 9999;
+        }
+    }
+
+    body {
+        min-height: 100vh;
+        background-color: $white-gray;
+
+        .loader {
+            background: #fff url("../images/loader.gif") no-repeat scroll center center;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            background-color: #fff;
+            z-index: 99999;
+        }
+
+        .btn-guinda-rounded {
+            display: inline-block;
+            color: #fff;
+            font-size: 1.298rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            background-color: $rosita;
+            border-radius: 50px;
+            padding: 0.65rem 3rem;
+            border: 1px solid $rosita;
+
+            &:hover {
+                color: $rosita;
+                background-color: #fff;
+                border: 1px solid $rosita;
+            }
+        }
+
+        object.pdf {
+            min-height: 25vh;
+            border-radius: 15px 15px 15px 15px;
+            box-shadow: 0px 4px 4px 0px rgba(99, 99, 99, 1);
+            -webkit-box-shadow: 0px 4px 4px 0px rgba(99, 99, 99, 0.445);
+            -moz-box-shadow: 0px 4px 4px 0px rgba(99, 99, 99, 0.2);
+        }
+
+        header {
+            background-color: #fff;
+
+            &.sombra-header {
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                margin-bottom: 7px;
+            }
+
+            nav {
+
+                // min-height: 40px;
+                // max-height: 70px;
+                // box-shadow: 0px 4px 4px 0px rgba(99, 99, 99, 1);
+                // -webkit-box-shadow: 0px 4px 4px 0px rgba(99, 99, 99, 0.445);
+                // -moz-box-shadow: 0px 4px 4px 0px rgba(99, 99, 99, 0.2);
+                .goto-expediente-menu {
+                    width: 100%;
+                    max-height: 59px;
+                }
+
+                .btn-expediente-copntainer {
+                    width: 264px;
+                }
+
+                .text-expediente {
+                    float: right;
+                    font-weight: 500;
+                    color: $nuevomorado;
+
+                    strong {
+                        font-weight: 900;
+                        letter-spacing: 0.075rem;
+                        font-size: 1.1em;
+                        text-decoration: underline;
+                    }
+                }
+
+                .nb-usuario {
+                    display: block !important;
+                    width: 100%;
+                    padding: 0.25rem 1.5rem;
+                    clear: both;
+                    font-weight: 600;
+                    color: #888c8c;
+                    text-align: right;
+                    font-size: 1.1em;
+                    white-space: nowrap;
+                    background-color: transparent;
+                    border: 0;
+                }
+
+                margin: 0 auto;
+                max-width: 6000px;
+
+                a {
+                    .brand-logo-cdmx {
+                        max-width: 290px;
+                        height: auto;
+                    }
+                }
+
+                .nav-item {
+                    .link-header {
+                        color: $deep-teal;
+                        font-weight: 700;
+                        text-decoration: underline;
+                        font-size: $fs-16;
+
+                        &:hover {
+                            color: $guinda03;
+                        }
+                    }
+
+                    // Llave CDMX
+                    .llave-cdmx {
+                        float: right;
+                        margin: -53px 1rem 0 0;
+
+                        span {
+                            display: block;
+                            float: left;
+                            max-width: 5.5rem;
+                            color: $greyish-brown-three;
+                            font-size: 0.9rem;
+                            font-weight: 600;
+                            line-height: normal;
+                            text-align: left;
+                            padding: 0 1rem 0 0;
+                            text-wrap: balance;
+                        }
+
+                        img {
+                            margin-top: 12px;
+                            float: right;
+                        }
+
+                        .mi-cuenta,
+                        .tp-user {
+                            color: $dorado03;
+                            font-size: $fs-11;
+                            font-weight: 700;
+                        }
+
+                        .user-ico {
+                            width: 25px;
+                            margin: 0 0.2rem 0 0.6rem;
+                            padding: 0;
+                        }
+
+                        &:hover {
+                            color: $dorado03;
+                        }
+                    }
+
+                    // Menú desplegable
+                    .dropdown-item {
+                        color: $greyish-brown-three;
+                        font-weight: 700;
+                        font-size: $fs-15;
+
+                        &:hover,
+                        &:focus {
+                            color: white;
+                            background-color: $nuevomorado;
+                        }
+
+                        &.active,
+                        &:active {
+                            color: $rosita;
+                            background-color: $nuevomorado;
+                        }
+
+                        &.rosita {
+                            color: $rosita !important;
+                        }
+                    }
+
+                    .dropdown-toggle:after {
+                        content: none !important;
+                    }
+
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+
+                // Menú responsive
+                .navbar-toggler {
+                    padding: 0.5rem;
+                    margin: 0;
+
+                    .hamburger {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        main {
+
+            //form, .form{
+            img.exclamation-sign {
+                margin-left: 0.5rem;
+            }
+
+            //}
+            .texto-rosita {
+                color: $rosita;
+            }
+
+            .encabezado {
+                color: $grisoscuro;
+                font-size: $fs-26;
+                font-weight: 600;
+                line-height: normal;
+                text-align: center;
+                padding: 0.75rem 1rem;
+                background-color: $moradogris;
+                box-shadow: 0px 16px 85px rgba(0, 146, 135, 0.0395542);
+                border-radius: 10px 10px 0px 0px;
+
+                span {
+                    color: $gris;
+                    font-size: $fs-28;
+                    font-weight: 900;
+                }
+            }
+
+            #btn-bks-container {
+                button {
+                    display: inline-block;
+                    color: #fff;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                    background-color: $rosita;
+                    border-radius: 10px;
+                    padding: 0.5rem 1rem;
+                    border: none;
+                }
+
+                margin-bottom: 3.125rem;
+            }
+
+            // Welcome
+            #welcome {
+                background-color: white;
+                padding: 0;
+                border-radius: 15px 15px 15px 15px;
+                box-shadow: 0px 4px 4px 0px rgba(99, 99, 99, 1);
+                -webkit-box-shadow: 0px 4px 4px 0px rgba(99, 99, 99, 0.445);
+                -moz-box-shadow: 0px 4px 4px 0px rgba(99, 99, 99, 0.2);
+
+                .aceptar-terms {
+                    font-weight: 700;
+                }
+
+                h1 {
+                    color: white;
+                    font-family: $font-family-monse;
+                    font-size: 2.75rem;
+                    font-weight: 700;
+                    letter-spacing: -0.63px;
+                    margin: 0 0 0.75rem;
+                    text-shadow: #666 0px 4px 4px;
+                }
+
+                h2 {
+                    color: white;
+                    font-family: $font-family-monse;
+                    font-size: 2.25rem;
+                    font-weight: 800;
+                    padding-bottom: 12px;
+                    margin: 0 0 0.75rem;
+                    text-shadow: #666 0px 4px 4px;
+                }
+
+                h3 {
+                    color: $greyish-brown-three;
+                    font-weight: 700;
+                    font-size: 24px;
+                    margin: 0;
+                    text-align: left;
+                    font-family: $font-family-monse;
+                }
+
+                h4 {
+                    color: $greyish-brown-three;
+                    font-weight: 700;
+                    font-size: 22px;
+                    margin: 0;
+                    text-align: left;
+                    font-family: $font-family-monse;
+
+                    a {
+                        text-decoration: underline;
+                        color: $rosita;
+                    }
+                }
+
+                p.header {
+                    color: $white;
+                    font-weight: 500;
+                    font-size: $fs-20;
+
+                    @media (min-width: 768px) {
+                        // padding-right: 16.5rem;
+                        line-height: 20px;
+                    }
+                }
+
+                .block-requisitos {
+                    background-color: $light2;
+                    border-radius: 8px 0px 0px 8px;
+                    color: $greyish-brown-three;
+                    font-weight: 400;
+                    line-height: 22px;
+                    font-size: 20px;
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+
+                    a {
+                        text-decoration: underline;
+                        font-weight: 700;
+                        color: $greyish-brown-three;
+                    }
+
+                    ul.lst-requisitos {
+                        margin: 2rem 0 0;
+                        text-align: left;
+
+                        li {
+                            position: relative;
+                            margin-bottom: 0;
+                            padding: 0 0 1rem 0.5rem;
+                            counter-increment: list;
+
+                            &::after {
+                                font-family: "Montserrat";
+                                content: counter(list);
+                                width: 32px;
+                                height: 32px;
+                                top: -4px;
+                                left: -40px;
+                                font-size: 20px;
+                                text-align: center;
+                                color: $white-two;
+                                border: none;
+                                background-color: $nuevomorado;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                border-radius: 50%;
+                                font-weight: 600 !important;
+                            }
+                        }
+                    }
+                }
+
+                .block-queson {
+                    background-color: $light;
+                    border-radius: 0px 8px 8px 0px;
+                    color: $greyish-brown-three;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 22px;
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                }
+
+                .cont-img {
+                    //background: linear-gradient(148deg,rgba(150,131,201,.56) 55%,#f4d8d8),url("../images/welcome-bg.png");
+                    background: url("../images/welcome-bg.png");
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 15px 15px 0px 0px;
+                    min-height: 236px;
+                }
+
+                .actionz {
+                    background-color: $light;
+                    border-radius: 8px 8px 8px 8px;
+                    color: $greyish-brown-three;
+                    display: flex !important;
+                    align-items: center;
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+
+                    .action {
+                        font-weight: 600;
+                        font-size: 1.125rem;
+
+                        &.consultar {
+                            max-width: 200px;
+                            margin: 0px auto 0px auto;
+                        }
+                    }
+
+                    // .btn-menu-main{
+
+                    // }
+                    .menu-main-items {
+                        @media (max-width: 900px) {
+                            width: auto;
+                        }
+
+                        @media (min-width: 901px) {
+                            width: auto !important;
+                        }
+
+                        .dropdown-item {
+                            font-size: 1.175rem;
+                            color: $morado-bg-iniciar;
+                            font-weight: 700;
+
+                            &:active {
+                                background-color: $moradogris;
+                            }
+
+                            &:hover {
+                                color: $morado-bg-iniciar !important;
+                                background-color: #f8f9fa;
+                            }
+                        }
+                    }
+
+                    button {
+                        &.btn-menu-main {
+                            border: 6px solid $contorno-morado;
+                            background-color: $morado-bg-iniciar;
+                            color: $white-two;
+                            font-weight: 600;
+                            font-size: 1.713rem;
+                            border-radius: 81px;
+                            min-width: 143px;
+
+                            &:disabled {
+                                border: 6px solid $texto-gral;
+                                background-color: $very-light-grey;
+                                color: $light2;
+                            }
+
+                            &.dropdown-toggle::after {
+                                display: inline-block;
+                                margin-left: 0px;
+                                vertical-align: 0px;
+                                content: url("../images/arrow-iniciar.svg");
+                                border-top: none;
+                                border-right: none;
+                                border-bottom: none;
+                                border-left: 0.3em solid transparent;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #inner-section {
+                background-color: white;
+                padding: 0;
+                border-radius: 15px 15px 15px 15px;
+                box-shadow: 0px 4px 4px 0px rgba(99, 99, 99, 1);
+                -webkit-box-shadow: 0px 4px 4px 0px rgba(99, 99, 99, 0.445);
+                -moz-box-shadow: 0px 4px 4px 0px rgba(99, 99, 99, 0.2);
+
+                p {
+                    line-height: normal;
+                    overflow-wrap: break-word;
+                }
+
+                .wp-error {
+                    color: $rosita;
+                    background-color: $rosita-wp-error;
+                    border-radius: 0px 5px 5px 0px;
+                    border-left: $rosita 7px solid;
+                    padding: 10px;
+                    font-weight: 500;
+
+                    &.alert {
+                        border-radius: 0px !important;
+                        margin-left: -15px;
+                        margin-right: -15px;
+                    }
+                }
+
+                .wp-info {
+                    color: $morado-bg-iniciar;
+                    background-color: rgba(148, 130, 163, .6);
+                    border-radius: 0px 5px 5px 0px;
+                    border-left: $morado-bg-iniciar 7px solid;
+                    padding: 10px;
+                    font-weight: 500;
+
+                    &.alert {
+                        border-radius: 0px !important;
+                        margin-left: -15px;
+                        margin-right: -15px;
+                    }
+                }
+
+                .tira-header {
+                    border-radius: 15px 15px 0px 0px;
+                    background-color: $moradogris;
+                    h1 {
+                        font-family: $font-family-monse;
+                        color: $greyish-brown-three;
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                    }
+                }
+
+                .tira-header-pagos {
+                    border-radius: 15px 15px 0px 0px;
+                    //background-color: $moradogris;
+                    background: linear-gradient(180deg, rgb(246, 234, 234, 1) 100%, rgba(191, 178, 220, 0.22) 180%) !important;
+
+                    h1 {
+                        font-family: $font-family-monse;
+                        color: $greyish-brown-three;
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                    }
+                }
+
+                .fragment-content {
+                    p {
+                        font-weight: 400;
+                        font-size: 1.25rem;
+                        text-align: justify;
+
+                        a {
+                            color: $rosita2;
+                            text-decoration: underline;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                h2 {
+                    font-family: $font-family-monse;
+                    color: $texto-gral;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    letter-spacing: -1px;
+                }
+
+                h3 {
+                    font-family: $font-family-monse;
+                    color: $rosita;
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                }
+
+                h4 {
+                    font-family: $font-family-monse;
+                    color: $grisoscurotram;
+                    font-size: 1.15rem;
+                    font-weight: 700;
+                    margin-top: 50px;
+                    letter-spacing: -1px;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                .bg-gris-celus {
+                    background-color: $light;
+                    border-radius: 11px 11px 11px 11px;
+                    max-width: 304px;
+
+                    img {
+                        &.lc-ya {
+                            float: right;
+                            margin-top: -135px;
+                            margin-right: -20px;
+                        }
+
+                        &.lc-no {
+                            float: right;
+                            margin-top: -159px;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+
+            .max-1083 {
+                max-width: 1139px !important;
+            }
+        }
+
+        footer {
+            background-color: $verde05;
+
+            .separador-footer {
+                border: 1px solid $separador-footer;
+            }
+
+            .with-separator {
+                border-right: 2px solid $separador-footer;
+
+                @media (max-width: 576px) {
+                    border-right: 0px;
+                }
+
+                @media (min-width: 768px) {
+                    border-right: 0px;
+                }
+            }
+
+            h5 {
+                color: #fff;
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 19px;
+            }
+
+            p {
+                color: #fff;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 21px;
+            }
+
+            li {
+                list-style: none;
+                margin: 0 0 0.5rem;
+            }
+
+            a {
+                color: #fff;
+                font-size: 0.875rem;
+                font-weight: 400;
+                line-height: 20px;
+                text-decoration: underline;
+
+                &:hover {
+                    color: $dorado03;
+                }
+
+                &.tel {
+                    font-size: 1rem !important;
+                }
+
+                &.redes {
+                    text-decoration: none;
+                    margin-left: 1rem;
+                }
+
+                &.related-link {
+                    font-size: 0.81rem;
+                    line-height: 15px;
+                }
+            }
+
+            .greca-footer {
+                max-height: 24px;
+                min-height: 24px;
+                background-image: url("../images/greca.png");
+                background-repeat: repeat-x;
+            }
+        }
+    }
+
+    #pg-error {
+        h3 {
+            font-weight: 700;
+            font-size: 1.563rem;
+            color: $rosita;
+        }
+
+        .lupa {
+            color: $rosita;
+        }
+
+        em {
+            font-weight: 700;
+            color: $rosita2;
+        }
+
+        .font-color-verde {
+            color: $rosita;
+        }
+    }
+}

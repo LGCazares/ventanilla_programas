@@ -1,0 +1,433 @@
+/**
+ * CDMX Style 2021
+ * Common Header Styles
+ */
+.cdmx-app-public-header {
+  border-bottom-style: none;
+}
+
+.cdmx-app-private-header {
+  border-bottom-style: solid;
+  border-bottom-width: 0.1rem;
+  border-bottom-color: #E2E2E2;
+  background-color: #ffffff;
+}
+// .cdmx-app-logo {
+//     height: 3rem;
+// }
+@media (min-width: 768px) {
+  .border-logo-rigth {
+    border-right: solid 2px #8B1232;
+  }
+}
+
+.cdmx-app-header-navmenu a {
+  color: $cdmx-light-green;
+  font-size: $fs-18;
+  text-decoration: none;
+  padding: 0 18px;
+  font-weight: 400;
+  // font-family: "Inter", "Arial" !important;
+  font-family: $font-family-monse!important;
+}
+
+.cdmx-app-header-navmenu a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.cdmx-app-logo-title {
+  // font-family: "Inter", "Arial" !important;
+  font-family: $font-family-monse!important;
+  font-size: $fs-11;
+  color: $cdmx-light-red;
+  font-weight: 700;
+  line-height: $fs-12;
+  text-transform: uppercase;
+}
+
+.cdmx-app-float-menu-bullet {
+  background-color: #fff;
+  color: $cdmx-dark-red;
+  top: 25%;
+  float: right;
+  position: fixed;
+  left: 1%;
+  z-index: 2;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+@media (min-width: 1200px) and (max-width: 6000px) {
+  .cdmx-app-logo {
+    height: 3.2rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .cdmx-app-logo {
+    height: 2.5rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .cdmx-app-logo {
+    height: 2rem;
+  }
+
+  .cdmx-app-header-navmenu a {
+    font-size: 0.8rem;
+  }
+
+  .cdmx-app-logo-title {
+    font-size: 0.59rem;
+  }
+}
+@media (min-width: 507px) and (max-width: 768px) {
+  .cdmx-app-logo {
+    height: 2rem;
+  }
+
+  .cdmx-app-logo-title {
+    font-size: 0.6rem;
+  }
+
+  .cdmx-app-hamburguer-menu-btn {
+    padding: 0.1rem;
+    font-size: 1rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.15s ease-in-out;
+  }
+
+  .cdmx-app-header-navmenu a {
+    color: $cdmx-light-green;
+    font-size: $fs-12;
+    text-decoration: none;
+    padding: 0 8px;
+    font-weight: 400;
+    // font-family: "Inter", "Arial" !important;
+    font-family: $font-family-monse!important;
+  }
+}
+@media (min-width: 361px) and (max-width: 506px) {
+  .cdmx-app-logo {
+    height: 2rem;
+  }
+
+  .cdmx-app-logo-title {
+    font-size: 0.45rem;
+    line-height: 0.65rem;
+  }
+
+  .cdmx-app-hamburguer-menu-btn {
+    padding: 0.1rem;
+    font-size: 1rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.15s ease-in-out;
+  }
+
+  .cdmx-app-header-navmenu a {
+    color: $cdmx-light-green;
+    font-size: $fs-12;
+    text-decoration: none;
+    padding: 0 2px;
+    font-weight: 400;
+    // font-family: "Inter", "Arial" !important;
+    font-family: $font-family-monse!important;
+  }
+}
+@media (min-width: 1px) and (max-width: 360px) {
+  .cdmx-app-logo {
+    height: 1.7rem;
+  }
+
+  .cdmx-app-logo-title {
+    font-size: 0.3569rem;
+    line-height: 0.55rem;
+  }
+
+  .cdmx-app-hamburguer-menu-btn {
+    padding: 0.1rem;
+    font-size: 1rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.15s ease-in-out;
+  }
+
+  .cdmx-app-header-navmenu a {
+    color: $cdmx-light-green;
+    font-size: 0.55rem;
+    text-decoration: none;
+    padding: 0 1px;
+    font-weight: 400;
+    // font-family: "Inter", "Arial" !important;
+    font-family: $font-family-monse!important;
+  }
+}
+// LlaveCDMX User Container
+.cdmx-app-llave-user-container {
+  background-color: transparent;
+  border: none;
+  min-width: 20rem;
+}
+
+.cdmx-app-llave-user-container .title {
+  color: $cdmx-dark-gold;
+  font-size: 0.8rem;
+  // font-family: 'Inter', 'Arial' !important;
+  font-family: $font-family-monse!important;
+}
+
+.cdmx-app-llave-user-container .username {
+  color: $cdmx-light-red;
+  font-size: 1.1rem;
+  // font-family: 'Inter', 'Arial' !important;
+  font-family: $font-family-monse!important;
+  line-height: 1;
+  text-transform: capitalize;
+}
+.cdmx-app-llave-user-container .role {
+  color: $cdmx-dark-gold;
+}
+.cdmx-app-llave-user-container img {
+  height: 2.5rem;
+}
+
+.cdmx-app-llave-user-container .dropdown-toggle::after,
+.cdmx-app-llave-user-container > .dropdown-toggle::after {
+  display: none;
+}
+
+.cdmx-app-llave-user-menu-options {
+  padding-inline-start: 0;
+}
+
+.cdmx-app-llave-user-menu-options li {
+  list-style: none;
+}
+
+.cdmx-app-llave-user-menu-options li .active {
+  color: $cdmx-light-red;
+  background-color: transparent;
+  // font-family: 'Inter', 'Arial' !important;
+  font-family: $font-family-monse!important;
+  font-weight: 700;
+}
+
+.cdmx-app-llave-user-menu-options li a {
+  color: $cdmx-light-red;
+  text-decoration: none;
+  // font-family: 'Inter', 'Arial' !important;
+  font-family: $font-family-monse!important;
+  line-height: 1.5;
+  transition: all 1s;
+}
+
+.cdmx-app-llave-user-menu-options li a:hover {
+  text-decoration: underline;
+  background-color: transparent;
+  color: $cdmx-light-red;
+}
+//Boostrap 5 Fix Rules
+.lh-1 {
+  line-height: 1;
+}
+
+.container-fluid {
+  max-width: 1440px;
+}
+@media (max-width: 768px) {
+  // .cdmx-app-llave-user-container {
+  //   min-width: 0;
+  // }
+
+  .cdmx-app-usermenu-container {
+    transform: translate3d(0px, 0px, 0px) !important;
+  }
+}
+
+.navbar{
+  &__header{
+    .logo-cdmx{
+      width: 150px;
+      height: auto;
+    }
+  }
+}
+
+// .navbar-expand-md .navbar-collapse {
+//   display: none!important;
+// }
+
+// @media (max-width: 1064px){
+//   #adip-dynmenu-nav .container-header #NavBarLinkExt {
+//       display: flex!important;
+//   }
+// }
+
+// @media(min-width: 640px) and (max-width: 765px){
+//   #adip-dynmenu-nav {
+//       height: 50px !important;
+//   }
+// }
+
+.header {
+
+  &-padrones {
+    padding-right: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: $fff;
+    flex-grow: 15;
+    text-align: center;
+
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.15));
+    .ul-padrones li { 
+      list-style: none;
+      margin-left: 1.05rem;
+      margin-right: 1.05rem;
+      max-width: 4.8rem;
+    }
+
+    &__link {
+      color: $deep-teal;
+      font-size: $fs-12;
+      font-weight: 700;
+      max-width: 4.8rem;
+
+      &:hover {
+        text-decoration: underline;
+        font-weight: 600;
+        color: $deep-teal;
+        // font-size: $fs-18;
+        max-width: 4.8rem;
+      }
+    }
+  }
+}
+@include media-breakpoint-only(md) {
+  .header{
+    &-padrones {
+        .ul-padrones li {
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+        }
+    }
+
+  }
+}
+.header-padrones--div{
+  flex-grow: 1;
+  text-align: center;
+  .ul-padrones{
+
+    list-style: none;
+    li{
+      margin-left: 1.05rem;
+      margin-right: 1.05rem;
+      max-width: 4.8rem;
+    }
+    .header-padrones__link {
+        color: $deep-teal;
+        font-size: $fs-12;
+        max-width: 4.8rem;
+        font-weight: 700;
+        
+    
+        &:hover {
+          text-decoration: underline;
+          color: $deep-teal;
+          max-width: 4.8rem;
+        }
+      }
+    }
+}
+.llave-nav{
+    .llave__signup{
+      &:hover{
+        background-color: #235B4E;
+        transition: 250ms all linear;
+        .text{
+          cursor: pointer;
+          color: $fff;
+          transition: 250ms all linear;
+          text-decoration: none;
+        }
+      }
+      transition: 250ms all linear;
+      margin: 0 0.25rem;
+      display: flex;
+      justify-content: space-between;
+      height: fit-content;
+      padding: 6px 6px;
+      background: $fff;
+      border: 2px solid #235B4E;
+      border-radius: 17px;
+      .text{
+        color: #235B4E;
+        text-align: center;
+        font-size: $fs-11;
+        line-height: $fs-11;
+        margin: 0;
+        strong{
+          font-weight: 700;
+        }
+      }
+    }
+    .llave__signin{
+      &:hover{
+        .img__div{
+          transform: scale(1.15);
+          transition: 250ms transform linear;
+        }
+        .text{
+          text-decoration: underline;
+          cursor: pointer;
+        }
+
+      }
+      margin: 0 0.25rem;
+      .img__div{
+        display: flex;
+        background-color: $fff;
+        border-radius: 50px;
+        min-width: 24px;
+        min-height: 24px;
+        width: 24px;
+        height: 24px;
+        margin-left: 0.25rem;
+        margin-top: auto;
+        margin-block: auto;
+        transition: 250ms all linear;
+        img{
+          margin: auto;
+          width: 0.75rem;
+          height: 17px;
+        }
+      }
+      display: flex;
+      justify-content: space-between;
+      min-height: fit-content;
+      height: auto;
+      padding: 6px 2px;
+      background: linear-gradient(109.88deg, #9F2241 28.24%, #924C6D 73.95%);
+      border-radius: 17px;
+      .text {
+        color: $fff;
+        font-size: $fs-11;
+        line-height: $fs-11;
+        font-weight: 400;
+        margin: 0;
+        padding: 0 0.5rem 0 0.3rem;
+        strong{
+          font-weight: 7000;
+        }
+      }
+    }
+  }

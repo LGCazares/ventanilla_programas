@@ -532,6 +532,7 @@ html {
                 .tira-header {
                     border-radius: 15px 15px 0px 0px;
                     background-color: $moradogris;
+
                     h1 {
                         font-family: $font-family-monse;
                         color: $greyish-brown-three;
@@ -622,7 +623,7 @@ html {
         }
 
         footer {
-            background-color: $verde05;
+            background-color: #FFFEF7;
 
             .separador-footer {
                 border: 1px solid $separador-footer;
@@ -641,14 +642,14 @@ html {
             }
 
             h5 {
-                color: #fff;
+                color: #9F2248;
                 font-weight: 700;
                 font-size: 1rem;
                 line-height: 19px;
             }
 
             p {
-                color: #fff;
+                color: #56595A;
                 font-size: 1rem;
                 font-weight: 400;
                 line-height: 21px;
@@ -660,7 +661,7 @@ html {
             }
 
             a {
-                color: #fff;
+                color: #56595A;
                 font-size: 0.875rem;
                 font-weight: 400;
                 line-height: 20px;
@@ -683,13 +684,6 @@ html {
                     font-size: 0.81rem;
                     line-height: 15px;
                 }
-            }
-
-            .greca-footer {
-                max-height: 24px;
-                min-height: 24px;
-                background-image: url("../images/greca.png");
-                background-repeat: repeat-x;
             }
         }
     }

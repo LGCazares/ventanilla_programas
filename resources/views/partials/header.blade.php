@@ -57,7 +57,7 @@
             </script>
         @else
             <a class="navbar-brand" href="{{ route('welcome') }}" title="Inicio">
-                <img src="{{ asset('images/brand.svg') }}" class="brand-logo-cdmx only-uncollapsed" alt="Logotipo del Gobierno de la Ciudad de México">
+                <img src="{{ asset('images/header_cdmx.png') }}" class="brand-logo-cdmx only-uncollapsed" alt="Logotipo del Gobierno de la Ciudad de México">
                 <img src="{{ asset('images/brand-mini.svg') }}" class="brand-logo-cdmx only-collapsed" alt="Logotipo del Gobierno de la Ciudad de México">
             </a>
             @auth

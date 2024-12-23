@@ -15155,7 +15155,7 @@ html body main #welcome h4 a, html body main #welcome .h4 a {
 html body main #welcome p.header {
   color: #ffffff;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 @media (min-width: 768px) {
   html body main #welcome p.header {

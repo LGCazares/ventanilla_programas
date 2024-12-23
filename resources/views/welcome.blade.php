@@ -5,8 +5,7 @@
         <div class="cont-img py-5 text-right">
             <div class="col-12">
                 <h2 class="mx-5 mt-3">{{ config('app.name') }}</h2>
-                <p class="mx-5 mt-3 header"><b>{{ config('app.description_anfitrion') }}</b></p>
-                <p class="mx-5 mt-3 header"><b>{{ config('app.description_plataformas') }}</b></p>
+                <p class="mx-5 mt-3 header"><b>{{ config('app.description') }}</b></p>
             </div>
         </div>
         <div class="row justify-content-center mx-4">

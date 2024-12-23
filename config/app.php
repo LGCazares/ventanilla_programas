@@ -16,8 +16,6 @@ return [
     'name' => env('APP_NAME_VUPS', 'Laravel'),
 
     'description' => env('APP_DESCRIPTION_VUPS'),
-    'description_anfitrion' => env('APP_DESCRIPTION_ANFITRION_VUPS'),
-    'description_plataformas' => env('APP_DESCRIPTION_PLATAFORMAS_VUPS'),
     'dependencia' => env('APP_DEPENDENCIA_VUPS'),
     'keywords' => env('APP_KEYWORDS_VUPS'),
 

@@ -19,7 +19,7 @@ return new class extends Migration
             $table->datetime('fh_registra');
 
             // Relacion
-            $table->foreign('ix_token')->references('ix_token')->on('carnet.t001800_sesion')->onDelete('cascade');
+            $table->foreign('ix_token')->references('ix_token')->on('t001800_sesion')->onDelete('cascade');
         });
     }
 

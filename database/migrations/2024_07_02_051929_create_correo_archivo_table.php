@@ -15,8 +15,8 @@ return new class extends Migration
             $table->bigInteger('id_correo')->unsigned();
             $table->bigInteger('id_archivo')->unsigned();
 
-            $table->foreign('id_correo')->references('id')->on('carnet.t001300_correo_app');
-            $table->foreign('id_archivo')->references('id')->on('carnet.t001301_archivo_app');
+            $table->foreign('id_correo')->references('id')->on('t001300_correo_app');
+            $table->foreign('id_archivo')->references('id')->on('t001301_archivo_app');
 
             $table->primary(['id_correo','id_archivo']);
         });

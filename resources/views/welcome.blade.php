@@ -20,13 +20,19 @@
                     <div class="col-md-6 mt-2">
                         <div class="col-md-8 col-8 text-center">
                             <div class="dropdown">
-                                <button class="w-100 btn-menu-main dropdown-toggle align-middle mt-3 mt-sm-0" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="w-100 btn-menu-main dropdown-toggle align-middle mt-3 mt-sm-0" type="button"
+                                    id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                                     Iniciar
                                 </button>
                                 <ul class="dropdown-menu menu-main-items" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item" href="{{ route('login') }}" title="Iniciar el trámite">Nuevo trámite</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a target="_blank" class="dropdown-item" href="{{ config('app.url_expediente') }}" title="Abre el Portal de Servicios en una pestaña nueva">Ir a mi expediente</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('login') }}"
+                                            title="Iniciar el trámite">Nuevo trámite</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a target="_blank" class="dropdown-item" href="{{ config('app.url_expediente') }}"
+                                            title="Abre el Portal de Servicios en una pestaña nueva">Ir a mi expediente</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -39,10 +45,12 @@
                 <h3 class="my-2">¿Cómo puedes hacerlo en línea?</h3>
                 <ul class="lst-requisitos">
                     <li class="mt-3">Inicia sesión con Llave CDMX Expediente ¿Aún no tienes una? Créala aquí.</li>
-                    <li class="mt-3">Para poder registrar tus inmuebles, es necesario contar con la información correspondiente sobre cada uno de ellos.</li>
+                    <li class="mt-3">Para poder registrar tus inmuebles, es necesario contar con la información
+                        correspondiente sobre cada uno de ellos.</li>
                 </ul>
             </div>
         </div>
+        {{--
         <div class="row justify-content-center mx-4">
             <div class="col-md-6 block-requisitos">
                 <div class="col-12 tira-header">
@@ -92,6 +100,7 @@
             </div>
             <div class="col-12 my-4">&nbsp;</div>
         </div>
+        --}}
     </section>
     <script>
         document.addEventListener('DOMContentLoaded', function() {

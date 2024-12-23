@@ -12,7 +12,7 @@ return [
     |
     */
 
-    'idcliente' => env('LLAVE_CLIENT_ID_ESTANCIA_TURISTICA'),
+    'idcliente' => env('LLAVE_CLIENT_ID_VUPS'),
 
     
     /*
@@ -25,7 +25,7 @@ return [
     |
     */
 
-    'redirect' => env('LLAVE_URL_REDIRECT_ESTANCIA_TURISTICA'),
+    'redirect' => env('LLAVE_URL_REDIRECT_VUPS'),
 
     
     /*
@@ -38,7 +38,7 @@ return [
     |
     */
 
-    'secret' => env('LLAVE_APP_SECRET_ESTANCIA_TURISTICA'),
+    'secret' => env('LLAVE_APP_SECRET_VUPS'),
 
 
     /*
@@ -51,19 +51,19 @@ return [
     |
     */
 
-    'server' => env('LLAVE_SERVER_ESTANCIA_TURISTICA'),
+    'server' => env('LLAVE_SERVER_VUPS'),
 
-    'gettoken' => env('LLAVE_GET_TOKEN_ESTANCIA_TURISTICA'),
+    'gettoken' => env('LLAVE_GET_TOKEN_VUPS'),
 
-    'getuser' => env('LLAVE_GET_USER_ESTANCIA_TURISTICA'),
+    'getuser' => env('LLAVE_GET_USER_VUPS'),
 
-    'getroles' => env('LLAVE_GET_ROLES_ESTANCIA_TURISTICA'),
+    'getroles' => env('LLAVE_GET_ROLES_VUPS'),
 
-    'createaccount' => env('LLAVE_CREATE_ACCOUNT_ESTANCIA_TURISTICA'),
+    'createaccount' => env('LLAVE_CREATE_ACCOUNT_VUPS'),
 
-    'logout' => env('LLAVE_LOGOUT_ESTANCIA_TURISTICA'),
+    'logout' => env('LLAVE_LOGOUT_VUPS'),
 
-    'sso' => (int)env('LLAVE_SSO_ENABLED_ESTANCIA_TURISTICA'),
+    'sso' => (int)env('LLAVE_SSO_ENABLED_VUPS'),
 
     /*
     |--------------------------------------------------------------------------
@@ -75,13 +75,13 @@ return [
     |
     */
 
-    'domainuser' => env('LLAVE_DOMAIN_USER_ESTANCIA_TURISTICA'),
-    'domainpassword' => env('LLAVE_DOMAIN_PASSWORD_ESTANCIA_TURISTICA'),
+    'domainuser' => env('LLAVE_DOMAIN_USER_VUPS'),
+    'domainpassword' => env('LLAVE_DOMAIN_PASSWORD_VUPS'),
 
     /*
      * Endpoint para obtener usuarios mediante un rol especifico 
      */
 
-    'situacionRol' => env('LLAVE_SITUACION_ROL_ESTANCIA_TURISTICA'),
+    'situacionRol' => env('LLAVE_SITUACION_ROL_VUPS'),
 
 ];

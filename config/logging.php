@@ -18,7 +18,7 @@ return [
     |
     */
 
-    'default' => env('LOG_CHANNEL_ESTANCIA_TURISTICA', 'stack'),
+    'default' => env('LOG_CHANNEL_VUPS', 'stack'),
 
     /*
     |--------------------------------------------------------------------------
@@ -54,22 +54,22 @@ return [
 
         'stack' => [
             'driver' => 'stack',
-            'channels' => explode(',', env('LOG_STACK_ESTANCIA_TURISTICA', 'single')),
+            'channels' => explode(',', env('LOG_STACK_VUPS', 'single')),
             'ignore_exceptions' => false,
         ],
 
         'single' => [
             'driver' => 'single',
             'path' => storage_path('logs/laravel.log'),
-            'level' => env('LOG_LEVEL_ESTANCIA_TURISTICA', 'debug'),
+            'level' => env('LOG_LEVEL_VUPS', 'debug'),
             'replace_placeholders' => true,
         ],
 
         'daily' => [
             'driver' => 'daily',
             'path' => storage_path('logs/laravel_'.php_sapi_name().'.log'),
-            'level' => env('LOG_LEVEL_ESTANCIA_TURISTICA', 'debug'),
-            'days' => env('LOG_DAILY_DAYS_ESTANCIA_TURISTICA', 14),
+            'level' => env('LOG_LEVEL_VUPS', 'debug'),
+            'days' => env('LOG_DAILY_DAYS_VUPS', 14),
             'replace_placeholders' => true,
             'permission' => 0664,
         ],
@@ -79,13 +79,13 @@ return [
             'url' => env('LOG_SLACK_WEBHOOK_URL'),
             'username' => env('LOG_SLACK_USERNAME', 'Laravel Log'),
             'emoji' => env('LOG_SLACK_EMOJI', ':boom:'),
-            'level' => env('LOG_LEVEL_ESTANCIA_TURISTICA', 'critical'),
+            'level' => env('LOG_LEVEL_VUPS', 'critical'),
             'replace_placeholders' => true,
         ],
 
         'papertrail' => [
             'driver' => 'monolog',
-            'level' => env('LOG_LEVEL_ESTANCIA_TURISTICA', 'debug'),
+            'level' => env('LOG_LEVEL_VUPS', 'debug'),
             'handler' => env('LOG_PAPERTRAIL_HANDLER', SyslogUdpHandler::class),
             'handler_with' => [
                 'host' => env('PAPERTRAIL_URL'),
@@ -97,7 +97,7 @@ return [
 
         'stderr' => [
             'driver' => 'monolog',
-            'level' => env('LOG_LEVEL_ESTANCIA_TURISTICA', 'debug'),
+            'level' => env('LOG_LEVEL_VUPS', 'debug'),
             'handler' => StreamHandler::class,
             'formatter' => env('LOG_STDERR_FORMATTER'),
             'with' => [
@@ -108,14 +108,14 @@ return [
 
         'syslog' => [
             'driver' => 'syslog',
-            'level' => env('LOG_LEVEL_ESTANCIA_TURISTICA', 'debug'),
+            'level' => env('LOG_LEVEL_VUPS', 'debug'),
             'facility' => env('LOG_SYSLOG_FACILITY', LOG_USER),
             'replace_placeholders' => true,
         ],
 
         'errorlog' => [
             'driver' => 'errorlog',
-            'level' => env('LOG_LEVEL_ESTANCIA_TURISTICA', 'debug'),
+            'level' => env('LOG_LEVEL_VUPS', 'debug'),
             'replace_placeholders' => true,
         ],
 

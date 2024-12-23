@@ -11,10 +11,10 @@ return [
     |
     */
 
-    'url_consulta' => env('URL_CURP_ESTANCIA_TURISTICA'),
+    'url_consulta' => env('URL_CURP_VUPS'),
 
-    'usr_consulta' => env('USR_CURP_ESTANCIA_TURISTICA'),
+    'usr_consulta' => env('USR_CURP_VUPS'),
 
-    'pwd_consulta' => env('PWD_CURP_ESTANCIA_TURISTICA'),
+    'pwd_consulta' => env('PWD_CURP_VUPS'),
 
 ];

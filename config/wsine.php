@@ -11,8 +11,8 @@ return [
     |
     */
 
-    'url_ine' => env('URL_INE_ESTANCIA_TURISTICA'),
-    'usr_ine' => env('USR_INE_ESTANCIA_TURISTICA'),
-    'pwd_ine' => env('PWD_INE_ESTANCIA_TURISTICA'),
+    'url_ine' => env('URL_INE_VUPS'),
+    'usr_ine' => env('USR_INE_VUPS'),
+    'pwd_ine' => env('PWD_INE_VUPS'),
 
 ];

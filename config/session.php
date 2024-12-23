@@ -18,7 +18,7 @@ return [
     |
     */
 
-    'driver' => env('SESSION_DRIVER_ESTANCIA_TURISTICA', 'database'),
+    'driver' => env('SESSION_DRIVER_VUPS', 'database'),
 
     /*
     |--------------------------------------------------------------------------
@@ -32,9 +32,9 @@ return [
     |
     */
 
-    'lifetime' => env('SESSION_LIFETIME_ESTANCIA_TURISTICA', 120),
+    'lifetime' => env('SESSION_LIFETIME_VUPS', 120),
 
-    'expire_on_close' => env('SESSION_EXPIRE_ON_CLOSE_ESTANCIA_TURISTICA', false),
+    'expire_on_close' => env('SESSION_EXPIRE_ON_CLOSE_VUPS', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -47,7 +47,7 @@ return [
     |
     */
 
-    'encrypt' => env('SESSION_ENCRYPT_ESTANCIA_TURISTICA', false),
+    'encrypt' => env('SESSION_ENCRYPT_VUPS', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -73,7 +73,7 @@ return [
     |
     */
 
-    'connection' => env('SESSION_CONNECTION_ESTANCIA_TURISTICA'),
+    'connection' => env('SESSION_CONNECTION_VUPS'),
 
     /*
     |--------------------------------------------------------------------------
@@ -86,7 +86,7 @@ return [
     |
     */
 
-    'table' => env('SESSION_TABLE_ESTANCIA_TURISTICA', 'sessions'),
+    'table' => env('SESSION_TABLE_VUPS', 'sessions'),
 
     /*
     |--------------------------------------------------------------------------
@@ -129,7 +129,7 @@ return [
 
     'cookie' => env(
         'SESSION_COOKIE',
-        Str::slug(env('APP_NAME_ESTANCIA_TURISTICA', 'laravel'), '_').'_session'
+        Str::slug(env('APP_NAME_VUPS', 'laravel'), '_').'_session'
     ),
 
     /*
@@ -143,7 +143,7 @@ return [
     |
     */
 
-    'path' => env('SESSION_PATH_ESTANCIA_TURISTICA', '/'),
+    'path' => env('SESSION_PATH_VUPS', '/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -182,7 +182,7 @@ return [
     |
     */
 
-    'http_only' => env('SESSION_HTTP_ONLY_ESTANCIA_TURISTICA', true),
+    'http_only' => env('SESSION_HTTP_ONLY_VUPS', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -199,7 +199,7 @@ return [
     |
     */
 
-    'same_site' => env('SESSION_SAME_SITE_ESTANCIA_TURISTICA', 'lax'),
+    'same_site' => env('SESSION_SAME_SITE_VUPS', 'lax'),
 
     /*
     |--------------------------------------------------------------------------

@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('CACHE_STORE_ESTANCIA_TURISTICA', 'database'),
+    'default' => env('CACHE_STORE_VUPS', 'database'),
 
     /*
     |--------------------------------------------------------------------------
@@ -40,9 +40,9 @@ return [
 
         'database' => [
             'driver' => 'database',
-            'table' => env('DB_CACHE_TABLE_ESTANCIA_TURISTICA', 'cache'),
-            'connection' => env('DB_CACHE_CONNECTION_ESTANCIA_TURISTICA'),
-            'lock_connection' => env('DB_CACHE_LOCK_CONNECTION_ESTANCIA_TURISTICA'),
+            'table' => env('DB_CACHE_TABLE_VUPS', 'cache'),
+            'connection' => env('DB_CACHE_CONNECTION_VUPS'),
+            'lock_connection' => env('DB_CACHE_LOCK_CONNECTION_VUPS'),
         ],
 
         'file' => [
@@ -78,11 +78,11 @@ return [
 
         'dynamodb' => [
             'driver' => 'dynamodb',
-            'key' => env('AWS_ACCESS_KEY_ID_ESTANCIA_TURISTICA'),
-            'secret' => env('AWS_SECRET_ACCESS_KEY_ESTANCIA_TURISTICA'),
-            'region' => env('AWS_DEFAULT_REGION_ESTANCIA_TURISTICA', 'us-east-1'),
-            'table' => env('DYNAMODB_CACHE_TABLE_ESTANCIA_TURISTICA', 'cache'),
-            'endpoint' => env('DYNAMODB_ENDPOINT_ESTANCIA_TURISTICA'),
+            'key' => env('AWS_ACCESS_KEY_ID_VUPS'),
+            'secret' => env('AWS_SECRET_ACCESS_KEY_VUPS'),
+            'region' => env('AWS_DEFAULT_REGION_VUPS', 'us-east-1'),
+            'table' => env('DYNAMODB_CACHE_TABLE_VUPS', 'cache'),
+            'endpoint' => env('DYNAMODB_ENDPOINT_VUPS'),
         ],
 
         'octane' => [
@@ -102,6 +102,6 @@ return [
     |
     */
 
-    'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME_ESTANCIA_TURISTICA', 'laravel'), '_').'_cache_'),
+    'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME_VUPS', 'laravel'), '_').'_cache_'),
 
 ];

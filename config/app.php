@@ -13,25 +13,25 @@ return [
     |
     */
 
-    'name' => env('APP_NAME_ESTANCIA_TURISTICA', 'Laravel'),
+    'name' => env('APP_NAME_VUPS', 'Laravel'),
 
-    'description' => env('APP_DESCRIPTION_ESTANCIA_TURISTICA'),
-    'description_anfitrion' => env('APP_DESCRIPTION_ANFITRION_ESTANCIA_TURISTICA'),
-    'description_plataformas' => env('APP_DESCRIPTION_PLATAFORMAS_ESTANCIA_TURISTICA'),
-    'dependencia' => env('APP_DEPENDENCIA_ESTANCIA_TURISTICA'),
-    'keywords' => env('APP_KEYWORDS_ESTANCIA_TURISTICA'),
+    'description' => env('APP_DESCRIPTION_VUPS'),
+    'description_anfitrion' => env('APP_DESCRIPTION_ANFITRION_VUPS'),
+    'description_plataformas' => env('APP_DESCRIPTION_PLATAFORMAS_VUPS'),
+    'dependencia' => env('APP_DEPENDENCIA_VUPS'),
+    'keywords' => env('APP_KEYWORDS_VUPS'),
 
     # Expediente
-    'url_expediente' => env('URL_EXPEDIENTE_ESTANCIA_TURISTICA', 'https://portalservicios.cdmx.gob.mx/'),
-    'url_widget' => env('URL_WIDGET_ESTANCIA_TURISTICA', '//portalservicios.cdmx.gob.mx/widget/'),
+    'url_expediente' => env('URL_EXPEDIENTE_VUPS', 'https://portalservicios.cdmx.gob.mx/'),
+    'url_widget' => env('URL_WIDGET_VUPS', '//portalservicios.cdmx.gob.mx/widget/'),
 
     # Header & footer
-    'use_frontbase' => (bool)env('USE_FRONTBASE_ESTANCIA_TURISTICA'),
-    'url_header' => env('HEADER_ESTANCIA_TURISTICA'),
-    'url_footer' => env('FOOTER_ESTANCIA_TURISTICA'),
-    'url_favico' => env('FAVICON_ESTANCIA_TURISTICA'),
-    'url_menu' => env('MENU_ESTANCIA_TURISTICA'),
-    'url_aviso_privacidad' => env('AVISO_PRIVACIDAD_ESTANCIA_TURISTICA'),
+    'use_frontbase' => (bool)env('USE_FRONTBASE_VUPS'),
+    'url_header' => env('HEADER_VUPS'),
+    'url_footer' => env('FOOTER_VUPS'),
+    'url_favico' => env('FAVICON_VUPS'),
+    'url_menu' => env('MENU_VUPS'),
+    'url_aviso_privacidad' => env('AVISO_PRIVACIDAD_VUPS'),
 
     #Expediente Documentos
     /*
@@ -39,9 +39,9 @@ return [
     | Ver si está activado, ID de cliente y frase secreta
     |--------------------------------------------------------------------------
     */
-    'docs_enabled' => (bool)env('MYDOCS_ENABLED_ESTANCIA_TURISTICA', false),
-    'docs_client' => env('MYDOCS_CLIENT_ESTANCIA_TURISTICA', ''),
-    'docs_secret' => env('MYDOCS_SECRET_ESTANCIA_TURISTICA', ''),
+    'docs_enabled' => (bool)env('MYDOCS_ENABLED_VUPS', false),
+    'docs_client' => env('MYDOCS_CLIENT_VUPS', ''),
+    'docs_secret' => env('MYDOCS_SECRET_VUPS', ''),
     /*
     |--------------------------------------------------------------------------
     | URLs
@@ -49,9 +49,9 @@ return [
     |
     | URL de pasarela, endpoint pasa generar solicitud y descargar archivo
     */
-    'docs_gateway' => env('MYDOCS_GATEWAY_ESTANCIA_TURISTICA', ''),
-    'docs_genrequest' => env('MYDOCS_GENREQUEST_ESTANCIA_TURISTICA', ''),
-    'docs_getfile' => env('MYDOCS_GETFILE_ESTANCIA_TURISTICA', ''),
+    'docs_gateway' => env('MYDOCS_GATEWAY_VUPS', ''),
+    'docs_genrequest' => env('MYDOCS_GENREQUEST_VUPS', ''),
+    'docs_getfile' => env('MYDOCS_GETFILE_VUPS', ''),
     /*
     |--------------------------------------------------------------------------
     | Basic Auth
@@ -60,8 +60,8 @@ return [
     | En este valor se especifica el usuario de Basic Auth que se usará 
     | para consumir el endpoint de request y download
     */
-    'docs_ba_user' => env('MYDOCS_BA_USER_ESTANCIA_TURISTICA', ''),
-    'docs_ba_pass' => env('MYDOCS_BA_PASS_ESTANCIA_TURISTICA', ''),
+    'docs_ba_user' => env('MYDOCS_BA_USER_VUPS', ''),
+    'docs_ba_pass' => env('MYDOCS_BA_PASS_VUPS', ''),
 
     /*
     |--------------------------------------------------------------------------
@@ -74,7 +74,7 @@ return [
     |
     */
 
-    'env' => env('APP_ENV_ESTANCIA_TURISTICA', 'production'),
+    'env' => env('APP_ENV_VUPS', 'production'),
 
     /*
     |--------------------------------------------------------------------------
@@ -87,7 +87,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG_ESTANCIA_TURISTICA', false),
+    'debug' => (bool) env('APP_DEBUG_VUPS', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -100,8 +100,8 @@ return [
     |
     */
 
-    'url' => env('APP_URL_ESTANCIA_TURISTICA', 'http://localhost'),
-    'asset_url' => env('ASSET_URL_ESTANCIA_TURISTICA', '/'),
+    'url' => env('APP_URL_VUPS', 'http://localhost'),
+    'asset_url' => env('ASSET_URL_VUPS', '/'),
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
@@ -113,7 +113,7 @@ return [
     |
     */
 
-    'timezone' => env('APP_TIMEZONE_ESTANCIA_TURISTICA', 'UTC'),
+    'timezone' => env('APP_TIMEZONE_VUPS', 'UTC'),
 
     /*
     |--------------------------------------------------------------------------
@@ -126,11 +126,11 @@ return [
     |
     */
 
-    'locale' => env('APP_LOCALE_ESTANCIA_TURISTICA', 'en'),
+    'locale' => env('APP_LOCALE_VUPS', 'en'),
 
-    'fallback_locale' => env('APP_FALLBACK_LOCALE_ESTANCIA_TURISTICA', 'en'),
+    'fallback_locale' => env('APP_FALLBACK_LOCALE_VUPS', 'en'),
 
-    'faker_locale' => env('APP_FAKER_LOCALE_ESTANCIA_TURISTICA', 'en_US'),
+    'faker_locale' => env('APP_FAKER_LOCALE_VUPS', 'en_US'),
 
     /*
     |--------------------------------------------------------------------------
@@ -145,11 +145,11 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
-    'key' => env('APP_KEY_ESTANCIA_TURISTICA'),
+    'key' => env('APP_KEY_VUPS'),
 
     'previous_keys' => [
         ...array_filter(
-            explode(',', env('APP_PREVIOUS_KEYS_ESTANCIA_TURISTICA', ''))
+            explode(',', env('APP_PREVIOUS_KEYS_VUPS', ''))
         ),
     ],
 
@@ -167,8 +167,8 @@ return [
     */
 
     'maintenance' => [
-        'driver' => env('APP_MAINTENANCE_DRIVER_ESTANCIA_TURISTICA', 'file'),
-        'store' => env('APP_MAINTENANCE_STORE_ESTANCIA_TURISTICA', 'database'),
+        'driver' => env('APP_MAINTENANCE_DRIVER_VUPS', 'file'),
+        'store' => env('APP_MAINTENANCE_STORE_VUPS', 'database'),
     ],
 
 ];

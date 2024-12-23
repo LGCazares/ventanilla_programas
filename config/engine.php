@@ -14,9 +14,9 @@ return [
     |
     */
 
-    'mandrillsecret' => env('MANDRILL_SECRET_ESTANCIA_TURISTICA'),
+    'mandrillsecret' => env('MANDRILL_SECRET_VUPS'),
 
-    'mandrillurl' => env('MANDRILL_URL_ESTANCIA_TURISTICA'),
+    'mandrillurl' => env('MANDRILL_URL_VUPS'),
 
 
     /*
@@ -28,8 +28,8 @@ return [
     | aplicativo
     */
 
-    'gmaps' => env('GMAPS_API_KEY_ESTANCIA_TURISTICA'),
-    'gmapsback' => env('GMAPS_API_KEY_ESTANCIA_TURISTICA_BACK'),
+    'gmaps' => env('GMAPS_API_KEY_VUPS'),
+    'gmapsback' => env('GMAPS_API_KEY_VUPS_BACK'),
 
 
 
@@ -42,7 +42,7 @@ return [
     | aplicativo
     */
 
-    'gaid' => env('GANALYTICS_ID_ESTANCIA_TURISTICA'),
+    'gaid' => env('GANALYTICS_ID_VUPS'),
 
 
 
@@ -53,11 +53,11 @@ return [
     |
     */
 
-    'captcha_key' => env('GCAPTCHA_KEY_ESTANCIA_TURISTICA'),
-    'captcha_secret' => env('GCAPTCHA_SECRET_ESTANCIA_TURISTICA'),
-    'captcha_valurl' => env('GCAPTCHA_VALIDATEURL_ESTANCIA_TURISTICA'),
-    'captcha_key_v2' => env('GCAPTCHA_KEY_ESTANCIA_TURISTICA_V2'),
-    'captcha_secret_v2' => env('GCAPTCHA_SECRET_ESTANCIA_TURISTICA_V2'),
+    'captcha_key' => env('GCAPTCHA_KEY_VUPS'),
+    'captcha_secret' => env('GCAPTCHA_SECRET_VUPS'),
+    'captcha_valurl' => env('GCAPTCHA_VALIDATEURL_VUPS'),
+    'captcha_key_v2' => env('GCAPTCHA_KEY_VUPS_V2'),
+    'captcha_secret_v2' => env('GCAPTCHA_SECRET_VUPS_V2'),
 
 
     /*
@@ -67,8 +67,8 @@ return [
     |
     */
 
-    'home_disabled' => (bool)env('HOME_DISABLED_ESTANCIA_TURISTICA', false),
-    'home_redirect' => env('HOME_REDIRECT_ESTANCIA_TURISTICA'),
+    'home_disabled' => (bool)env('HOME_DISABLED_VUPS', false),
+    'home_redirect' => env('HOME_REDIRECT_VUPS'),
 
 
 
@@ -81,7 +81,7 @@ return [
     | reportes de error especificados en Handler::report().
     */
 
-    'mailing_errors' => env('ERROR_REPORT_MAIL_ESTANCIA_TURISTICA'),
+    'mailing_errors' => env('ERROR_REPORT_MAIL_VUPS'),
 
 
 
@@ -94,7 +94,7 @@ return [
     | sesión al cambiar el user agent. Predeterminado: TRUE
     */
 
-    'validate_ua' => env('VALIDATE_UA_ESTANCIA_TURISTICA', TRUE),
+    'validate_ua' => env('VALIDATE_UA_VUPS', TRUE),
 
 
 
@@ -107,7 +107,7 @@ return [
     | sesión al cambiar la IP. Predeterminado: TRUE
     */
 
-    'validate_ip' => env('VALIDATE_IP_ESTANCIA_TURISTICA', TRUE),
+    'validate_ip' => env('VALIDATE_IP_VUPS', TRUE),
 
 
 
@@ -121,8 +121,8 @@ return [
     | autenticación
     */
 
-    'basic_auth_usr' => env('BA_USER_ESTANCIA_TURISTICA'),
-    'basic_auth_pwd' => env('BA_PASSWORD_ESTANCIA_TURISTICA'),
+    'basic_auth_usr' => env('BA_USER_VUPS'),
+    'basic_auth_pwd' => env('BA_PASSWORD_VUPS'),
 
 
 
@@ -136,8 +136,8 @@ return [
     | autenticación
     */
 
-    'locatel_enabled' => (bool)env('CHAT_ENABLED_ESTANCIA_TURISTICA'),
-    'locatel_domain' => env('CHAT_DOMAIN_ESTANCIA_TURISTICA'),
+    'locatel_enabled' => (bool)env('CHAT_ENABLED_VUPS'),
+    'locatel_domain' => env('CHAT_DOMAIN_VUPS'),
 
 
 
@@ -163,7 +163,7 @@ return [
     |   public const HOME_INVITADO = '/proveedores';
     */
 
-    'guest_zone' => env('ZONA_INVITADOS_ESTANCIA_TURISTICA', 'invitados'),
-    'guest_zone_enabled' => env('ZONA_INVITADOS_ENABLED_ESTANCIA_TURISTICA', 'invitados'),
+    'guest_zone' => env('ZONA_INVITADOS_VUPS', 'invitados'),
+    'guest_zone_enabled' => env('ZONA_INVITADOS_ENABLED_VUPS', 'invitados'),
 
 ];

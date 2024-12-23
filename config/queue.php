@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('QUEUE_CONNECTION_ESTANCIA_TURISTICA', 'database'),
+    'default' => env('QUEUE_CONNECTION_VUPS', 'database'),
 
     /*
     |--------------------------------------------------------------------------
@@ -36,10 +36,10 @@ return [
 
         'database' => [
             'driver' => 'database',
-            'connection' => env('DB_QUEUE_CONNECTION_ESTANCIA_TURISTICA'),
-            'table' => env('DB_QUEUE_TABLE_ESTANCIA_TURISTICA', 'jobs'),
-            'queue' => env('DB_QUEUE_ESTANCIA_TURISTICA', 'default'),
-            'retry_after' => (int) env('DB_QUEUE_RETRY_AFTER_ESTANCIA_TURISTICA', 90),
+            'connection' => env('DB_QUEUE_CONNECTION_VUPS'),
+            'table' => env('DB_QUEUE_TABLE_VUPS', 'jobs'),
+            'queue' => env('DB_QUEUE_VUPS', 'default'),
+            'retry_after' => (int) env('DB_QUEUE_RETRY_AFTER_VUPS', 90),
             'after_commit' => false,
         ],
 
@@ -54,20 +54,20 @@ return [
 
         'sqs' => [
             'driver' => 'sqs',
-            'key' => env('AWS_ACCESS_KEY_ID_ESTANCIA_TURISTICA'),
-            'secret' => env('AWS_SECRET_ACCESS_KEY_ESTANCIA_TURISTICA'),
-            'prefix' => env('SQS_PREFIX_ESTANCIA_TURISTICA', 'https://sqs.us-east-1.amazonaws.com/your-account-id'),
-            'queue' => env('SQS_QUEUE_ESTANCIA_TURISTICA', 'default'),
-            'suffix' => env('SQS_SUFFIX_ESTANCIA_TURISTICA'),
-            'region' => env('AWS_DEFAULT_REGION_ESTANCIA_TURISTICA', 'us-east-1'),
+            'key' => env('AWS_ACCESS_KEY_ID_VUPS'),
+            'secret' => env('AWS_SECRET_ACCESS_KEY_VUPS'),
+            'prefix' => env('SQS_PREFIX_VUPS', 'https://sqs.us-east-1.amazonaws.com/your-account-id'),
+            'queue' => env('SQS_QUEUE_VUPS', 'default'),
+            'suffix' => env('SQS_SUFFIX_VUPS'),
+            'region' => env('AWS_DEFAULT_REGION_VUPS', 'us-east-1'),
             'after_commit' => false,
         ],
 
         'redis' => [
             'driver' => 'redis',
             'connection' => env('REDIS_QUEUE_CONNECTION_ESTAANCIA_TURISTICA', 'default'),
-            'queue' => env('REDIS_QUEUE_ESTANCIA_TURISTICA', 'default'),
-            'retry_after' => (int) env('REDIS_QUEUE_RETRY_AFTER_ESTANCIA_TURISTICA', 90),
+            'queue' => env('REDIS_QUEUE_VUPS', 'default'),
+            'retry_after' => (int) env('REDIS_QUEUE_RETRY_AFTER_VUPS', 90),
             'block_for' => null,
             'after_commit' => false,
         ],
@@ -86,7 +86,7 @@ return [
     */
 
     'batching' => [
-        'database' => env('DB_CONNECTION_ESTANCIA_TURISTICA', 'sqlite'),
+        'database' => env('DB_CONNECTION_VUPS', 'sqlite'),
         'table' => 'job_batches',
     ],
 
@@ -104,8 +104,8 @@ return [
     */
 
     'failed' => [
-        'driver' => env('QUEUE_FAILED_DRIVER_ESTANCIA_TURISTICA', 'database-uuids'),
-        'database' => env('DB_CONNECTION_ESTANCIA_TURISTICA', 'sqlite'),
+        'driver' => env('QUEUE_FAILED_DRIVER_VUPS', 'database-uuids'),
+        'database' => env('DB_CONNECTION_VUPS', 'sqlite'),
         'table' => 'failed_jobs',
     ],
 

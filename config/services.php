@@ -19,9 +19,9 @@ return [
     ],
 
     'ses' => [
-        'key' => env('AWS_ACCESS_KEY_ID_ESTANCIA_TURISTICA'),
-        'secret' => env('AWS_SECRET_ACCESS_KEY_ESTANCIA_TURISTICA'),
-        'region' => env('AWS_DEFAULT_REGION_ESTANCIA_TURISTICA', 'us-east-1'),
+        'key' => env('AWS_ACCESS_KEY_ID_VUPS'),
+        'secret' => env('AWS_SECRET_ACCESS_KEY_VUPS'),
+        'region' => env('AWS_DEFAULT_REGION_VUPS', 'us-east-1'),
     ],
 
     'resend' => [
@@ -36,6 +36,6 @@ return [
     ],
 
     'mandrill' => [
-        'secret' => env('MANDRILL_SECRET_ESTANCIA_TURISTICA', 'MANDRIL_KEY_NOT_DEFINED'),
+        'secret' => env('MANDRILL_SECRET_VUPS', 'MANDRIL_KEY_NOT_DEFINED'),
     ],
 ];

@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('FILESYSTEM_DISK_ESTANCIA_TURISTICA', 'local'),
+    'default' => env('FILESYSTEM_DISK_VUPS', 'local'),
 
     /*
     |--------------------------------------------------------------------------
@@ -49,20 +49,20 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL_ESTANCIA_TURISTICA').'/storage',
+            'url' => env('APP_URL_VUPS').'/storage',
             'visibility' => 'public',
             'throw' => false,
         ],
 
         's3' => [
             'driver' => 's3',
-            'key' => env('AWS_ACCESS_KEY_ID_ESTANCIA_TURISTICA'),
-            'secret' => env('AWS_SECRET_ACCESS_KEY_ESTANCIA_TURISTICA'),
-            'region' => env('AWS_DEFAULT_REGION_ESTANCIA_TURISTICA'),
-            'bucket' => env('AWS_BUCKET_ESTANCIA_TURISTICA'),
-            'url' => env('AWS_URL_ESTANCIA_TURISTICA'),
+            'key' => env('AWS_ACCESS_KEY_ID_VUPS'),
+            'secret' => env('AWS_SECRET_ACCESS_KEY_VUPS'),
+            'region' => env('AWS_DEFAULT_REGION_VUPS'),
+            'bucket' => env('AWS_BUCKET_VUPS'),
+            'url' => env('AWS_URL_VUPS'),
             'endpoint' => env('AWS_ENDPOINT:ESTANCIA_TURISTICA'),
-            'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT_ESTANCIA_TURISTICA', false),
+            'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT_VUPS', false),
             'throw' => false,
         ],
 

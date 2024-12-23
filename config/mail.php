@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'default' => env('MAIL_MAILER_ESTANCIA_TURISTICA', 'log'),
+    'default' => env('MAIL_MAILER_VUPS', 'log'),
 
     /*
     |--------------------------------------------------------------------------
@@ -39,14 +39,14 @@ return [
 
         'smtp' => [
             'transport' => 'smtp',
-            'url' => env('MAIL_URL_ESTANCIA_TURISTICA'),
-            'host' => env('MAIL_HOST_ESTANCIA_TURISTICA', '127.0.0.1'),
-            'port' => env('MAIL_PORT_ESTANCIA_TURISTICA', 2525),
-            'encryption' => env('MAIL_ENCRYPTION_ESTANCIA_TURISTICA', 'tls'),
-            'username' => env('MAIL_USERNAME_ESTANCIA_TURISTICA'),
-            'password' => env('MAIL_PASSWORD_ESTANCIA_TURISTICA'),
+            'url' => env('MAIL_URL_VUPS'),
+            'host' => env('MAIL_HOST_VUPS', '127.0.0.1'),
+            'port' => env('MAIL_PORT_VUPS', 2525),
+            'encryption' => env('MAIL_ENCRYPTION_VUPS', 'tls'),
+            'username' => env('MAIL_USERNAME_VUPS'),
+            'password' => env('MAIL_PASSWORD_VUPS'),
             'timeout' => null,
-            'local_domain' => env('MAIL_EHLO_DOMAIN_ESTANCIA_TURISTICA', parse_url(env('APP_URL_ESTANCIA_TURISTICA', 'http://localhost'), PHP_URL_HOST)),
+            'local_domain' => env('MAIL_EHLO_DOMAIN_VUPS', parse_url(env('APP_URL_VUPS', 'http://localhost'), PHP_URL_HOST)),
         ],
 
         'ses' => [
@@ -109,8 +109,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS_ESTANCIA_TURISTICA', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME_ESTANCIA_TURISTICA', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS_VUPS', 'hello@example.com'),
+        'name' => env('MAIL_FROM_NAME_VUPS', 'Example'),
     ],
 
 ];

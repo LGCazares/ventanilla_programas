@@ -14,8 +14,8 @@ return [
     */
 
     'defaults' => [
-        'guard' => env('AUTH_GUARD_ESTANCIA_TURISTICA', 'web'),
-        'passwords' => env('AUTH_PASSWORD_BROKER_ESTANCIA_TURISTICA', 'users'),
+        'guard' => env('AUTH_GUARD_VUPS', 'web'),
+        'passwords' => env('AUTH_PASSWORD_BROKER_VUPS', 'users'),
     ],
 
     /*
@@ -72,7 +72,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => env('AUTH_MODEL_ESTANCIA_TURISTICA', App\Models\User::class),
+            'model' => env('AUTH_MODEL_VUPS', App\Models\User::class),
         ],
         'apps_api' => [
             'driver' => 'eloquent',
@@ -112,7 +112,7 @@ return [
     'passwords' => [
         // 'users' => [
         //     'provider' => 'users',
-        //     'table' => env('AUTH_PASSWORD_RESET_TOKEN_TABLE_ESTANCIA_TURISTICA', 'password_reset_tokens'),
+        //     'table' => env('AUTH_PASSWORD_RESET_TOKEN_TABLE_VUPS', 'password_reset_tokens'),
         //     'expire' => 60,
         //     'throttle' => 60,
         // ],
@@ -135,6 +135,6 @@ return [
     |
     */
 
-    'password_timeout' => env('AUTH_PASSWORD_TIMEOUT_ESTANCIA_TURISTICA', 10800),
+    'password_timeout' => env('AUTH_PASSWORD_TIMEOUT_VUPS', 10800),
 
 ];
